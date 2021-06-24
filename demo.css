@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,700;1,400&display=swap');
+
+
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: 0;
+    text-transform: capitalize;
+    transition: all .2s linear;
+
+
+}
+::selection{
+    background: yellow;
+    color: gray;
+}
+html{
+    font-size: 65.2%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width:1.4rem;
+
+
+}
+html::-webkit-scrollbar-track{
+    background: black;
+
+
+}
+html::-webkit-scrollbar-thumb{
+    background: rgb(94, 9, 190);
+
+
+}
+body{
+    background: rgb(17, 17, 17);
+    overflow-x: hidden;
+    padding-left: 38rem;
+}
+section{
+    min-height: 100vh;
+    padding: 1rem;
+
+}
+.btn{
+    padding: .7rem 3rem;
+    
+    background: rgb(68, 58, 52);
+    color:whitesmoke;
+    cursor:pointer;
+    margin-top:1rem ;
+    border-radius:8rem;
+    font-size: 2rem;
+    height: 6rem;
+    width: 16rem;
+    
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+    
+}
+.btn:hover{
+    background: rgb(105, 20, 155);
+    
+}
+header{
+    position: fixed;
+    top:0;left: 0;
+    z-index:1000;
+    height: 100%;
+    width: 34rem;
+    background:rgb(34, 32, 32) ;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+
+
+}
+header .user img{
+    height: 17rem;
+    width:17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid rgb(153, 18, 194);
+
+}
+header .user .name{
+    font-size: 3.1rem;
+    color: aliceblue;
+}
+header .user .post{
+    font-size: 2.1rem;
+    color: aliceblue;
+
+}
+header .navbar{
+    width:100%;
+    
+}
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 6rem;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: rgb(55, 54, 65);
+    color: antiquewhite;
+    border-radius: 5rem;
+    font-size: 2rem;
+    
+}
+header .navbar ul li a:hover{
+    background:rgb(130, 25, 190) ;
+}
+header .navbar ul li{
+    width: 210px;
+}
+#menu{
+    position: fixed;
+    top: 2rem;right: 2rem;
+    background: gray;
+    color: antiquewhite;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    z-index: 1000;
+    display: none;
+}
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55.2%;
+        
+    }
+    .home{
+        padding: 1rem 4rem;
+    }
+}
+@media (max-width:994px){
+    header{
+        left: -120%;
+        
+    }
+    #menu{
+        display:block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding: 0;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+        
+    }
+    
+}
+
+@media (max-width:994px){
+    header{
+        width: 100vw;
+        
+    }
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 15rem;
+    justify-content: center;
+}
+.home h3{
+    font-size: 2.5rem;
+    color: aliceblue;
+
+
+}
+.home h1{
+    font-size: 5rem;
+    color: aliceblue;
+    
+
+}
+.home h1{
+    font-size: 5rem;
+    color: aliceblue;
+    
+
+}
+.home h1 span{
+    color:rgb(142, 112, 175)
+}
+.home p{
+    font-size: 2rem;
+    color: aliceblue;
+    padding: 1rem 0;
+  
+
+}
+#heading{
+    text-align: center;
+    margin:0 6rem;
+    font-size:4rem;
+    border-bottom: .1rem solid rgba(87, 64, 64, 0.267);
+    color:antiquewhite;
+}
+#heading span{
+    color:rgb(142, 112, 175)
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+.about .row .info{
+    flex:1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+  
+    
+}
+.about .row .info h3{
+    font-size:2rem ;
+    color:white;
+    padding:1rem 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color:rgb(142, 112, 175);
+    padding:0 .5rem;
+
+}
+@media (max-width:400px){
+    header{
+        width:100vw;
+    }
+    .heading{
+        margin:0 3rem;
+    }
+    
+}
+.works .row .box-container .box{
+     width:200rem;
+     background: #222;
+     text-align: center;
+     align-items: center;
+     padding:2rem;
+     margin:2rem;
+     width: 200px
+}
+ .works img{
+    width: 380px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+    padding-top: 70px;
+
+    
+}
+.box-container .box h3{
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    
+
+}
+.works h1{
+    text-align: center;
+    color:antiquewhite;
+    padding-top: 52px;
+    padding-right: 100px;
+    font-size: 45px;
+}
+.works h1 span{
+    color:rgb(131, 116, 136);
+}
+
+.contact .heading{
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(248, 243, 237);
+    padding-top: 22px;
+}
+.contact .heading span{
+    color:rgb(131, 116, 136);
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+
+}
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+
+    margin-bottom: 4rem;
+    
+}
+.contact .row form .box{
+    padding:1.5rem;
+    margin: 1rem 0;
+    background: black;
+    color:aliceblue;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+
+
+
+
+}
+.contact .row form .message{
+     height: 14rem;
+     resize:none;
+
+}
+.content .title{
+    text-transform: uppercase;
+    color:aliceblue;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size:2rem;
+    color:aliceblue;
+    padding: 1rem 0;
+    font-weight: normal;
+
+}
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color:rgb(184, 162, 207)
+}
+
+.works .w1{
+    box-sizing: border-box;
+   
+}
